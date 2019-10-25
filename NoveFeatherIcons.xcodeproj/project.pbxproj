@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39006A6C2363262900ED0F86 /* FeatherIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39006A6B2363262900ED0F86 /* FeatherIcons.xcassets */; };
+		39006A6E2363267000ED0F86 /* Feather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39006A6D2363267000ED0F86 /* Feather.swift */; };
 		39F4579B235F2E97002DE2BF /* NoveFeatherIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 39F45799235F2E97002DE2BF /* NoveFeatherIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39006A6B2363262900ED0F86 /* FeatherIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FeatherIcons.xcassets; sourceTree = "<group>"; };
+		39006A6D2363267000ED0F86 /* Feather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feather.swift; sourceTree = "<group>"; };
 		39F45796235F2E97002DE2BF /* NoveFeatherIcons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoveFeatherIcons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		39F45799235F2E97002DE2BF /* NoveFeatherIcons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoveFeatherIcons.h; sourceTree = "<group>"; };
 		39F4579A235F2E97002DE2BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 			children = (
 				39F45799235F2E97002DE2BF /* NoveFeatherIcons.h */,
 				39F4579A235F2E97002DE2BF /* Info.plist */,
+				39006A6D2363267000ED0F86 /* Feather.swift */,
+				39006A6B2363262900ED0F86 /* FeatherIcons.xcassets */,
 			);
 			path = NoveFeatherIcons;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					39F45795235F2E97002DE2BF = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -121,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39006A6C2363262900ED0F86 /* FeatherIcons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39006A6E2363267000ED0F86 /* Feather.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 		39F4579F235F2E97002DE2BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F2M6RF7E9E;
@@ -278,6 +288,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.novesoft.NoveFeatherIcons;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +297,7 @@
 		39F457A0235F2E97002DE2BF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F2M6RF7E9E;
