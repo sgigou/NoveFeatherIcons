@@ -297,12 +297,12 @@ public class Feather {
     
     private static let bundle = Bundle(for: Feather.self)
     
-    public static func getIcon(_ name: IconName) -> UIImage {
+    public static func getIcon(_ name: IconName) -> UIImage? {
         guard let image = UIImage(named: name.rawValue, in: bundle, compatibleWith: nil) else {
             #if DEBUG
             print("[WARNING] Icon \(name) not found.")
             #endif
-            return UIImage(named: IconName.feather.rawValue)!
+            return nil
         }
         return image
     }
