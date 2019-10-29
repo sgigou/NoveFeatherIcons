@@ -8,6 +8,15 @@
 
 import UIKit
 
+extension UIBarButtonItem {
+    
+    public convenience init(icon: Feather.IconName, style: UIBarButtonItem.Style, target: Any?, action: Selector?) {
+        let image = Feather.getIcon(icon)
+        self.init(image: image, style: style, target: target, action: action)
+    }
+    
+}
+
 @IBDesignable public class FeatherBarButtonItem: UIBarButtonItem {
     
     @IBInspectable public var iconName: String? {
@@ -28,18 +37,11 @@ import UIKit
         updateIcon()
     }
     
-    public convenience init(icon: Feather.IconName, style: UIBarButtonItem.Style, target: Any?, action: Selector?) {
-        let image = Feather.getIcon(icon)
-        self.init(image: image, style: style, target: target, action: action)
-    }
-    
     // MARK: Drawing
     
     private func updateIcon() {
-        if let name = iconName, let icon = Feather.IconName.init(rawValue: name) {
-            image = Feather.getIcon(icon)
-        } else {
-            image = nil
+        if let name = iconName {
+            image = Feather.getIcon(name)
         }
     }
     
