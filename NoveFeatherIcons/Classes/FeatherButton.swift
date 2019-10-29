@@ -31,10 +31,8 @@ import UIKit
     // MARK: Drawing
     
     private func updateIcon() {
-        if let name = iconName, let icon = Feather.IconName.init(rawValue: name) {
-            setImage(Feather.getIcon(icon), for: .normal)
-        } else {
-            setImage(nil, for: .normal)
+        if let name = iconName {
+            setImage(Feather.getIcon(name), for: .normal)
         }
     }
     
