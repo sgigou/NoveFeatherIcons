@@ -39,13 +39,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		30BECAF424DDBC0F009F95D5 /* Source */ = {
+		30BECAF424DDBC0F009F95D5 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				39F07F942366F94500B8EC6C /* Classes */,
 				39F07F952366F95100B8EC6C /* Resources */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		39F07F942366F94500B8EC6C /* Classes */ = {
@@ -89,7 +89,7 @@
 				30BECAF524DDBC33009F95D5 /* README.md */,
 				39F45799235F2E97002DE2BF /* NoveFeatherIcons.h */,
 				39F4579A235F2E97002DE2BF /* Info.plist */,
-				30BECAF424DDBC0F009F95D5 /* Source */,
+				30BECAF424DDBC0F009F95D5 /* Sources */,
 			);
 			path = NoveFeatherIcons;
 			sourceTree = "<group>";
