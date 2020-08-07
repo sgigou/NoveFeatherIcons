@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30BECAF624DDBC33009F95D5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 30BECAF524DDBC33009F95D5 /* README.md */; };
 		39006A6C2363262900ED0F86 /* FeatherIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39006A6B2363262900ED0F86 /* FeatherIcons.xcassets */; };
 		39006A6E2363267000ED0F86 /* Feather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39006A6D2363267000ED0F86 /* Feather.swift */; };
 		394062F923683F7700C554DC /* FeatherImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394062F823683F7700C554DC /* FeatherImageView.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30BECAF524DDBC33009F95D5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		39006A6B2363262900ED0F86 /* FeatherIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FeatherIcons.xcassets; sourceTree = "<group>"; };
 		39006A6D2363267000ED0F86 /* Feather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feather.swift; sourceTree = "<group>"; };
 		394062F823683F7700C554DC /* FeatherImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatherImageView.swift; sourceTree = "<group>"; };
@@ -37,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30BECAF424DDBC0F009F95D5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				39F07F942366F94500B8EC6C /* Classes */,
+				39F07F952366F95100B8EC6C /* Resources */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		39F07F942366F94500B8EC6C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,10 +86,10 @@
 		39F45798235F2E97002DE2BF /* NoveFeatherIcons */ = {
 			isa = PBXGroup;
 			children = (
+				30BECAF524DDBC33009F95D5 /* README.md */,
 				39F45799235F2E97002DE2BF /* NoveFeatherIcons.h */,
 				39F4579A235F2E97002DE2BF /* Info.plist */,
-				39F07F942366F94500B8EC6C /* Classes */,
-				39F07F952366F95100B8EC6C /* Resources */,
+				30BECAF424DDBC0F009F95D5 /* Source */,
 			);
 			path = NoveFeatherIcons;
 			sourceTree = "<group>";
@@ -153,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30BECAF624DDBC33009F95D5 /* README.md in Resources */,
 				39006A6C2363262900ED0F86 /* FeatherIcons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
