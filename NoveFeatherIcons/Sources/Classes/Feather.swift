@@ -6,6 +6,7 @@
 //  Copyright © 2019 Novesoft. All rights reserved.
 //
 
+#if canImport(UIKit)
 import UIKit
 
 public class Feather {
@@ -310,5 +311,5 @@ public class Feather {
         }
         return image
     }
-    
 }
+#endif

@@ -5,7 +5,7 @@
 //  Created by Steve Gigou on 29/10/2019.
 //  Copyright © 2019 Novesoft. All rights reserved.
 //
-
+#if canImport(UIKit)
 import UIKit
 
 extension UIImageView {
@@ -41,3 +41,4 @@ class FeatherImageView: UIImageView {
     }
     
 }
+#endif

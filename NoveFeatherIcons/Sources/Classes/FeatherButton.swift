@@ -5,7 +5,7 @@
 //  Created by Steve Gigou on 28/10/2019.
 //  Copyright © 2019 Novesoft. All rights reserved.
 //
-
+#if canImport(UIKit)
 import UIKit
 
 @IBDesignable public class FeatherButton: UIButton {
@@ -37,3 +37,4 @@ import UIKit
     }
     
 }
+#endif
