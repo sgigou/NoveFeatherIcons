@@ -5,7 +5,7 @@ import XCTest
 final class NoveFeatherIconsTests: XCTestCase {
     
     func testAllIconsReturnImage() {
-        Feather.IconName.allCases.forEach { (icon) in            
+        Feather.IconName.allCases.forEach { (icon) in
             let image = Feather.getIcon(icon)
             XCTAssertNotNil(image)
             
