@@ -24,12 +24,24 @@ let package = Package(
         .target(
             name: "NoveFeatherIcons",
             dependencies: [],
-            path: "Sources"
+            path: "Sources",
+            resources: [
+              // Copy directories as-is.
+              // Use to retain directory structure.
+              // Will be at top level in bundle.
+              .copy("Sources/Resources"),
+            ]
         ),
         .testTarget(
             name: "NoveFeatherIconsTests",
             dependencies: ["NoveFeatherIcons"],
-            path: "Tests"
+            path: "Tests",
+            resources: [
+              // Copy directories as-is.
+              // Use to retain directory structure.
+              // Will be at top level in bundle.
+              .copy("Sources/Resources"),
+            ]
         ),
     ]
 )

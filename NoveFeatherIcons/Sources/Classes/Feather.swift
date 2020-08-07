@@ -8,10 +8,10 @@
 
 #if canImport(UIKit)
 import UIKit
-
+#endif
 public class Feather {
     
-    public enum IconName: String {
+    public enum IconName: String, CaseIterable {
         case activity = "activity"
         case airplay = "airplay"
         case alertCircle = "alert-circle"
@@ -295,7 +295,7 @@ public class Feather {
         case zoomIn = "zoom-in"
         case zoomOut = "zoom-out"
     }
-    
+    #if canImport(UIKit)
     private static let bundle = Bundle(for: Feather.self)
     
     public static func getIcon(_ name: IconName) -> UIImage? {
@@ -311,5 +311,6 @@ public class Feather {
         }
         return image
     }
+    #endif
 }
-#endif
+

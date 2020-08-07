@@ -1,16 +1,15 @@
 import XCTest
 @testable import NoveFeatherIcons
 
+#if canImport(UIKit)
 final class NoveFeatherIconsTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-//        XCTAssertEqual(NoveFeatherIcons().text, "Hello, World!")
-        XCTAssertTrue(true)
+    
+    func testAllIconsReturnImage() {
+        Feather.IconName.allCases.forEach { (icon) in            
+            let image = Feather.getIcon(icon)
+            XCTAssertNotNil(image)
+            
+        }
     }
-
-    static var allTests = [
-        ("testExample", testExample),
-    ]
 }
+#endif
