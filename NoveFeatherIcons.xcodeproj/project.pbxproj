@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		30BECAF624DDBC33009F95D5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 30BECAF524DDBC33009F95D5 /* README.md */; };
-		30BECB0824DDBE7B009F95D5 /* NoveFeatherIconsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BECB0724DDBE7B009F95D5 /* NoveFeatherIconsTests.swift */; };
 		30BECB0A24DDBE7B009F95D5 /* NoveFeatherIcons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F45796235F2E97002DE2BF /* NoveFeatherIcons.framework */; platformFilter = ios; };
-		30BECB1124DDBE9B009F95D5 /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BECAF824DDBD00009F95D5 /* LinuxMain.swift */; };
 		30BECB1224DDBE9B009F95D5 /* NoveFeatherIconsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BECAFA24DDBD00009F95D5 /* NoveFeatherIconsTests.swift */; };
-		30BECB1324DDBE9B009F95D5 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BECAFB24DDBD00009F95D5 /* XCTestManifests.swift */; };
+		30BECB2124DDD121009F95D5 /* FeatherIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39006A6B2363262900ED0F86 /* FeatherIcons.xcassets */; };
 		39006A6C2363262900ED0F86 /* FeatherIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39006A6B2363262900ED0F86 /* FeatherIcons.xcassets */; };
 		39006A6E2363267000ED0F86 /* Feather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39006A6D2363267000ED0F86 /* Feather.swift */; };
 		394062F923683F7700C554DC /* FeatherImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394062F823683F7700C554DC /* FeatherImageView.swift */; };
@@ -33,12 +31,8 @@
 
 /* Begin PBXFileReference section */
 		30BECAF524DDBC33009F95D5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
-		30BECAF824DDBD00009F95D5 /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		30BECAFA24DDBD00009F95D5 /* NoveFeatherIconsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoveFeatherIconsTests.swift; sourceTree = "<group>"; };
-		30BECAFB24DDBD00009F95D5 /* XCTestManifests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		30BECB0524DDBE7B009F95D5 /* NoveFeatherIconsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoveFeatherIconsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		30BECB0724DDBE7B009F95D5 /* NoveFeatherIconsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoveFeatherIconsTests.swift; sourceTree = "<group>"; };
-		30BECB0924DDBE7B009F95D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39006A6B2363262900ED0F86 /* FeatherIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FeatherIcons.xcassets; sourceTree = "<group>"; };
 		39006A6D2363267000ED0F86 /* Feather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feather.swift; sourceTree = "<group>"; };
 		394062F823683F7700C554DC /* FeatherImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatherImageView.swift; sourceTree = "<group>"; };
@@ -80,7 +74,6 @@
 		30BECAF724DDBD00009F95D5 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				30BECAF824DDBD00009F95D5 /* LinuxMain.swift */,
 				30BECAF924DDBD00009F95D5 /* NoveFeatherIconsTests */,
 			);
 			path = Tests;
@@ -90,16 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				30BECAFA24DDBD00009F95D5 /* NoveFeatherIconsTests.swift */,
-				30BECAFB24DDBD00009F95D5 /* XCTestManifests.swift */,
-			);
-			path = NoveFeatherIconsTests;
-			sourceTree = "<group>";
-		};
-		30BECB0624DDBE7B009F95D5 /* NoveFeatherIconsTests */ = {
-			isa = PBXGroup;
-			children = (
-				30BECB0724DDBE7B009F95D5 /* NoveFeatherIconsTests.swift */,
-				30BECB0924DDBE7B009F95D5 /* Info.plist */,
 			);
 			path = NoveFeatherIconsTests;
 			sourceTree = "<group>";
@@ -127,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				39F45798235F2E97002DE2BF /* NoveFeatherIcons */,
-				30BECB0624DDBE7B009F95D5 /* NoveFeatherIconsTests */,
 				39F45797235F2E97002DE2BF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -246,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30BECB2124DDD121009F95D5 /* FeatherIcons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,9 +248,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30BECB0824DDBE7B009F95D5 /* NoveFeatherIconsTests.swift in Sources */,
-				30BECB1324DDBE9B009F95D5 /* XCTestManifests.swift in Sources */,
-				30BECB1124DDBE9B009F95D5 /* LinuxMain.swift in Sources */,
 				30BECB1224DDBE9B009F95D5 /* NoveFeatherIconsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
