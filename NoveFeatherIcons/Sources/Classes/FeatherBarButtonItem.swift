@@ -1,23 +1,23 @@
 //
-//  FeatherImage.swift
+//  FeatherBarButtonItem.swift
 //  NoveFeatherIcons
 //
-//  Created by Steve Gigou on 29/10/2019.
+//  Created by Steve Gigou on 28/10/2019.
 //  Copyright © 2019 Novesoft. All rights reserved.
 //
-
+#if canImport(UIKit)
 import UIKit
 
-extension UIImageView {
+extension UIBarButtonItem {
     
-    public convenience init(icon: Feather.IconName) {
+    public convenience init(icon: Feather.IconName, style: UIBarButtonItem.Style, target: Any?, action: Selector?) {
         let image = Feather.getIcon(icon)
-        self.init(image: image)
+        self.init(image: image, style: style, target: target, action: action)
     }
     
 }
 
-class FeatherImageView: UIImageView {
+@IBDesignable public class FeatherBarButtonItem: UIBarButtonItem {
     
     @IBInspectable public var iconName: String? {
         didSet {
@@ -26,6 +26,11 @@ class FeatherImageView: UIImageView {
     }
     
     // MARK: Life cycle
+    
+    override init() {
+        super.init()
+        updateIcon()
+    }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -41,3 +46,5 @@ class FeatherImageView: UIImageView {
     }
     
 }
+
+#endif

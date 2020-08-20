@@ -1,14 +1,23 @@
 //
-//  FeatherButton.swift
+//  FeatherImage.swift
 //  NoveFeatherIcons
 //
-//  Created by Steve Gigou on 28/10/2019.
+//  Created by Steve Gigou on 29/10/2019.
 //  Copyright © 2019 Novesoft. All rights reserved.
 //
-
+#if canImport(UIKit)
 import UIKit
 
-@IBDesignable public class FeatherButton: UIButton {
+extension UIImageView {
+    
+    public convenience init(icon: Feather.IconName) {
+        let image = Feather.getIcon(icon)
+        self.init(image: image)
+    }
+    
+}
+
+class FeatherImageView: UIImageView {
     
     @IBInspectable public var iconName: String? {
         didSet {
@@ -17,11 +26,6 @@ import UIKit
     }
     
     // MARK: Life cycle
-    
-    public override init(frame: CGRect) {
-        super.init(frame: frame)
-        updateIcon()
-    }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -32,8 +36,9 @@ import UIKit
     
     private func updateIcon() {
         if let name = iconName {
-            setImage(Feather.getIcon(name), for: .normal)
+            image = Feather.getIcon(name)
         }
     }
     
 }
+#endif

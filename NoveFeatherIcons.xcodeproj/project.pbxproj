@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30BECAF624DDBC33009F95D5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 30BECAF524DDBC33009F95D5 /* README.md */; };
+		30BECB0A24DDBE7B009F95D5 /* NoveFeatherIcons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F45796235F2E97002DE2BF /* NoveFeatherIcons.framework */; platformFilter = ios; };
+		30BECB1224DDBE9B009F95D5 /* NoveFeatherIconsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BECAFA24DDBD00009F95D5 /* NoveFeatherIconsTests.swift */; };
+		30BECB2124DDD121009F95D5 /* FeatherIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39006A6B2363262900ED0F86 /* FeatherIcons.xcassets */; };
 		39006A6C2363262900ED0F86 /* FeatherIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39006A6B2363262900ED0F86 /* FeatherIcons.xcassets */; };
 		39006A6E2363267000ED0F86 /* Feather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39006A6D2363267000ED0F86 /* Feather.swift */; };
 		394062F923683F7700C554DC /* FeatherImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394062F823683F7700C554DC /* FeatherImageView.swift */; };
@@ -15,7 +19,20 @@
 		39F4579B235F2E97002DE2BF /* NoveFeatherIcons.h in Headers */ = {isa = PBXBuildFile; fileRef = 39F45799235F2E97002DE2BF /* NoveFeatherIcons.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		30BECB0B24DDBE7B009F95D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39F4578D235F2E97002DE2BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39F45795235F2E97002DE2BF;
+			remoteInfo = NoveFeatherIcons;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		30BECAF524DDBC33009F95D5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		30BECAFA24DDBD00009F95D5 /* NoveFeatherIconsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoveFeatherIconsTests.swift; sourceTree = "<group>"; };
+		30BECB0524DDBE7B009F95D5 /* NoveFeatherIconsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoveFeatherIconsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39006A6B2363262900ED0F86 /* FeatherIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = FeatherIcons.xcassets; sourceTree = "<group>"; };
 		39006A6D2363267000ED0F86 /* Feather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feather.swift; sourceTree = "<group>"; };
 		394062F823683F7700C554DC /* FeatherImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatherImageView.swift; sourceTree = "<group>"; };
@@ -27,6 +44,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		30BECB0224DDBE7B009F95D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30BECB0A24DDBE7B009F95D5 /* NoveFeatherIcons.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39F45793235F2E97002DE2BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,6 +62,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30BECAF424DDBC0F009F95D5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				39F07F942366F94500B8EC6C /* Classes */,
+				39F07F952366F95100B8EC6C /* Resources */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		30BECAF724DDBD00009F95D5 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				30BECAF924DDBD00009F95D5 /* NoveFeatherIconsTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		30BECAF924DDBD00009F95D5 /* NoveFeatherIconsTests */ = {
+			isa = PBXGroup;
+			children = (
+				30BECAFA24DDBD00009F95D5 /* NoveFeatherIconsTests.swift */,
+			);
+			path = NoveFeatherIconsTests;
+			sourceTree = "<group>";
+		};
 		39F07F942366F94500B8EC6C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				39F45796235F2E97002DE2BF /* NoveFeatherIcons.framework */,
+				30BECB0524DDBE7B009F95D5 /* NoveFeatherIconsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,10 +126,11 @@
 		39F45798235F2E97002DE2BF /* NoveFeatherIcons */ = {
 			isa = PBXGroup;
 			children = (
-				39F45799235F2E97002DE2BF /* NoveFeatherIcons.h */,
 				39F4579A235F2E97002DE2BF /* Info.plist */,
-				39F07F942366F94500B8EC6C /* Classes */,
-				39F07F952366F95100B8EC6C /* Resources */,
+				39F45799235F2E97002DE2BF /* NoveFeatherIcons.h */,
+				30BECAF524DDBC33009F95D5 /* README.md */,
+				30BECAF424DDBC0F009F95D5 /* Sources */,
+				30BECAF724DDBD00009F95D5 /* Tests */,
 			);
 			path = NoveFeatherIcons;
 			sourceTree = "<group>";
@@ -97,6 +149,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		30BECB0424DDBE7B009F95D5 /* NoveFeatherIconsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30BECB0D24DDBE7B009F95D5 /* Build configuration list for PBXNativeTarget "NoveFeatherIconsTests" */;
+			buildPhases = (
+				30BECB0124DDBE7B009F95D5 /* Sources */,
+				30BECB0224DDBE7B009F95D5 /* Frameworks */,
+				30BECB0324DDBE7B009F95D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30BECB0C24DDBE7B009F95D5 /* PBXTargetDependency */,
+			);
+			name = NoveFeatherIconsTests;
+			productName = NoveFeatherIconsTests;
+			productReference = 30BECB0524DDBE7B009F95D5 /* NoveFeatherIconsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		39F45795235F2E97002DE2BF /* NoveFeatherIcons */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39F4579E235F2E97002DE2BF /* Build configuration list for PBXNativeTarget "NoveFeatherIcons" */;
@@ -121,9 +191,13 @@
 		39F4578D235F2E97002DE2BF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1160;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = Novesoft;
 				TargetAttributes = {
+					30BECB0424DDBE7B009F95D5 = {
+						CreatedOnToolsVersion = 11.6;
+					};
 					39F45795235F2E97002DE2BF = {
 						CreatedOnToolsVersion = 11.0;
 						LastSwiftMigration = 1100;
@@ -144,15 +218,25 @@
 			projectRoot = "";
 			targets = (
 				39F45795235F2E97002DE2BF /* NoveFeatherIcons */,
+				30BECB0424DDBE7B009F95D5 /* NoveFeatherIconsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		30BECB0324DDBE7B009F95D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30BECB2124DDD121009F95D5 /* FeatherIcons.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39F45794235F2E97002DE2BF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30BECAF624DDBC33009F95D5 /* README.md in Resources */,
 				39006A6C2363262900ED0F86 /* FeatherIcons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +244,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		30BECB0124DDBE7B009F95D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30BECB1224DDBE9B009F95D5 /* NoveFeatherIconsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		39F45792235F2E97002DE2BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,7 +265,52 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		30BECB0C24DDBE7B009F95D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 39F45795235F2E97002DE2BF /* NoveFeatherIcons */;
+			targetProxy = 30BECB0B24DDBE7B009F95D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		30BECB0E24DDBE7B009F95D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoveFeatherIconsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.novesoft.NoveFeatherIcons.NoveFeatherIconsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30BECB0F24DDBE7B009F95D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoveFeatherIconsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.novesoft.NoveFeatherIcons.NoveFeatherIconsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		39F4579C235F2E97002DE2BF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -354,6 +491,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		30BECB0D24DDBE7B009F95D5 /* Build configuration list for PBXNativeTarget "NoveFeatherIconsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30BECB0E24DDBE7B009F95D5 /* Debug */,
+				30BECB0F24DDBE7B009F95D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		39F45790235F2E97002DE2BF /* Build configuration list for PBXProject "NoveFeatherIcons" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
